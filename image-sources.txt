@@ -1,0 +1,17 @@
+Image sources
+
+assets/esp32.jpg
+Ubahnverleih, Wikimedia Commons (CC0)
+https://commons.wikimedia.org/wiki/File:ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg
+
+assets/star-wars.svg
+Wikimedia Commons (public domain logo)
+https://commons.wikimedia.org/wiki/File:Star_Wars_Logo_2.svg
+
+assets/comlab-feedback.jpg
+cottonbro studio, Pexels
+https://www.pexels.com/photo/close-up-photo-of-sticky-notes-on-whiteboard-5990265/
+
+assets/pickleball.jpg
+Mason Tuttle, Pexels
+https://www.pexels.com/photo/pickleball-paddle-on-blue-background-17299531/

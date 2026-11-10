@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Aadit Talele projects: ESP32 Smart Clock and Weather Display, ComLab, Ranking Engine, PictureBook, Logic Gate Simulator, Physics Engine, and Todo App.">
+  <title>Projects | Aadit Talele</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Aadit Talele</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main">
+    <h1>Projects</h1>
+    <p class="intro">Software projects and my ECE Discovery Project.</p>
+    <section id="discovery" aria-labelledby="discovery-title">
+      <h2 id="discovery-title">ESP32 Smart Clock and Weather Display (Work in Progress)</h2>
+      <figure><img class="project-cover esp32-photo" src="assets/esp32.jpg"
+          alt="An Espressif ESP-WROOM-32 development board" width="1280" height="983" loading="lazy">
+      </figure>
+      <div class="text-section case-study" id="discovery-overview">
+        <h3>The problem</h3>
+        <p>A clock can tell me the time, but getting ready for the day also means checking the weather, deciding what to
+          wear, and keeping track of alarms. My Discovery Project brings those tasks into one device: a Wi-Fi connected
+          smart alarm clock built around an ESP32. I want it to combine an OLED display, a buzzer, and an LED with
+          indoor sensing and online weather information.</p>
+        <p>The OLED screen will display the time and date, the current alarm or stopwatch status, outdoor weather,
+          indoor temperature and humidity, and a recommendation for what to wear. The outdoor information I want to
+          include covers temperature, humidity, rain, and wind. The goal is to make the device useful as a quick
+          reference while still allowing more detailed control through a web interface.</p>
+        <h3>The planned process</h3>
+        <p>I plan to develop the device in stages. First, I will establish a working connection between the ESP32 and
+          OLED display and get the time and date onto the screen. Then I will add the DHT11 temperature and humidity
+          sensor so that the device can report indoor conditions. Keeping these steps separate should make it easier to
+          check the wiring and identify which part needs attention if something does not behave as expected.</p>
+        <p>Next, I will connect the device to Wi-Fi and retrieve outdoor weather through an API. The display will bring
+          the indoor and outdoor information together, and I will add a graphical clothing recommendation based on the
+          weather. I will need to decide how often to refresh the data and how to show that information is unavailable
+          or out of date. Those details are part of making the display understandable.</p>
+        <p>The alarm function will use a buzzer and a flashing LED. I want to be able to create and configure alarms
+          rather than fixing one alarm time in the program. A button will be part of the hardware controls, and I plan
+          to add a web interface for alarms and display settings. My longer-term aim is to use an interface on my
+          personal website to control the device; the connection between that interface and the ESP32 still needs to be
+          designed and tested.</p>
+        <p>My approximate parts list includes an ESP development board, OLED display, DHT11 sensor, RGB LED, active or
+          passive buzzer, button, breadboard, jumper wires, resistors, and a USB-C cable. I have purchased the
+          development kit linked below. I also plan to use The Hive and consult an ESP32 web-server tutorial and the
+          ESP32 documentation while building the project. The exact parts and implementation may change as I test the
+          design.</p>
+        <h3>The intended outcome</h3>
+        <p>I will consider the project complete when the device displays the time and date, shows outdoor weather from
+          an API, measures indoor temperature and humidity, and provides a graphical suggestion for what to wear. It
+          should allow alarms to be created or configured and activate both the buzzer and flashing LED when an alarm
+          occurs. The web interface should let me control alarms and other settings.</p>
+        <p>These are intended outcomes, not completed results. My testing will need to check each feature individually
+          and then check how the complete device behaves together. I will record whether display updates interfere with
+          alarm timing, whether settings take effect correctly, and what happens if the Wi-Fi connection or weather API
+          is unavailable. I will add actual observations and any remaining limitations after testing.</p>
+        <h3>Reflection &amp; next steps</h3>
+        <p>This project gives me a way to connect software engineering with embedded hardware. It involves a user
+          interface, external data, device state, and physical outputs in the same system. My next step is to assemble a
+          small working version and confirm the display and sensor connections before adding more features. As the build
+          develops, I will document my decisions, add an original photo or video, and replace this planning section with
+          a reflection on what actually worked and what I would change.</p>
+      </div>
+      <details class="text-section resources">
+        <summary>Parts &amp; project resources</summary>
+        <ul>
+          <li>ESP development board, OLED display, DHT11 sensor, RGB LED, buzzer, button, breadboard, jumper wires,
+            resistors, USB-C cable.</li>
+          <li><a
+              href="https://www.amazon.com/ELEGOOTutorial-Development-MicrocontrollerCompatible/dp/B0FR4RGDYN">Development
+              kit I purchased</a></li>
+          <li><a href="https://www.youtube.com/watch?v=wGIGs0nl_JU">ESP32 Web Server tutorial</a></li>
+          <li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html">ESP32 documentation</a>
+          </li>
+          <li>Planned Georgia Tech resource: The Hive.</li>
+        </ul>
+      </details>
+    </section>
+    <section class="section-divider" id="software" aria-labelledby="software-title">
+      <h2 id="software-title">Software projects</h2>
+      <div class="two-column project-list">
+        <article class="project-card">
+          <img src="assets/comlab-feedback.jpg" alt="Colorful task notes organized on a whiteboard" width="1100"
+            height="733" loading="lazy">
+          <h3>ComLab</h3>
+          <p>Best Use of Snowflake API at Hacks for Hackers Hackathon by MLH. An AI platform that streamlines feedback
+            by converting user tickets into actionable insights through automated triaging and summarization.</p>
+          <div class="project-links"><a href="https://devpost.com/software/comlab-an1uem">View project &rarr;</a></div>
+        </article>
+        <article class="project-card">
+
+          <h3>Ranking Engine</h3>
+          <p>A low-latency pairwise voting engine using FastAPI, Redis leaderboards, and asynchronous batch persistence
+            to PostgreSQL.</p>
+
+        </article>
+        <article class="project-card">
+
+          <h3>PictureBook</h3>
+          <p>Create picturebooks using an interactive editor. Get access to AI image generation features to aid in the
+            storytelling process.</p>
+
+        </article>
+        <article class="project-card">
+
+          <h3>Logic Gate Simulator</h3>
+          <p>Create, run, and visualize different logic circuits in an interactive environment.</p>
+          <div class="project-links"><a href="https://lg-sim.aadittalele.com">View project &rarr;</a></div>
+
+        </article>
+        <article class="project-card">
+
+          <h3>Physics Engine</h3>
+          <p>Create celestial bodies. Simulate simple Newtonian physics in space.</p>
+
+        </article>
+        <article class="project-card">
+
+          <h3>Todo App</h3>
+          <p>A simple app for creating, editing, and deleting todos.</p>
+
+        </article>
+      </div>
+    </section>
+    <section class="text-section" aria-labelledby="misc-title">
+      <h2 id="misc-title">Miscellaneous</h2>
+      <p>A list of miscellaneous things.</p>
+      <ul>
+        <li><a href="https://sprig.hackclub.com/share/jNvXf1nNp7BQERx8B67C">Maze Sprig Game</a></li>
+        <li><a href="https://scratch.mit.edu/users/MinySlimy/">Scratch</a></li>
+      </ul>
+    </section>
+  </main>
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Want to collaborate or connect?</p>
+      <p>Email: <a href="mailto:adtalele0@gmail.com">adtalele0@gmail.com</a></p>
+      <nav class="social-links" aria-label="Networking profiles">
+        <a href="https://www.linkedin.com/in/aadittalele">LinkedIn</a>
+        <a href="https://github.com/aadittalele">GitHub</a>
+        <a href="https://devpost.com/aadittalele">Devpost</a>
+      </nav>
+    </div>
+  </section>
+  <footer class="container site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Aadit Talele.</p><a href="image-sources.txt">Image sources</a>
+    </div>
+  </footer>
+</body>
+
+</html>
